@@ -1,7 +1,19 @@
 module.exports = {
   siteMetadata: {
-      title: `myportfolio`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `Anna Ścisłowska - front-end developer`,
+    siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: ["gatsby-plugin-netlify-cms", "gatsby-plugin-sass"]
+  plugins: [
+    "gatsby-plugin-netlify-cms",
+    "gatsby-plugin-sass",
+    "gatsby-plugin-transition-link",
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /icons/, // See below to configure properly
+        },
+      },
+    },
+  ],
 };
