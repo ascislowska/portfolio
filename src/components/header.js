@@ -1,6 +1,7 @@
 import React from "react";
-import AniLink from "gatsby-plugin-transition-link/AniLink";
-import TransitionLink from 'gatsby-plugin-transition-link';
+//import AniLink from "gatsby-plugin-transition-link/AniLink";
+//import TransitionLink from 'gatsby-plugin-transition-link';
+import Link from "gatsby";
 
 import { useStaticQuery, graphql } from 'gatsby'
 
@@ -11,6 +12,7 @@ import HomeIcon from "../images/icons/home.svg";
 import AboutIcon from "../images/icons/about5.svg";
 import PortfolioIcon from "../images/icons/portfolio2.svg";
 import ContactIcon from "../images/icons/mail.svg";
+import gatsbyConfig from "../../gatsby-config";
 
 
 const Header = () => {
@@ -51,10 +53,10 @@ const Header = () => {
     return sections.map((section) => {
       return (
         <li>
-          <TransitionLink cover to={`/${section.key}`} bg="black" direction="up" className="nav-link" activeClassName="active" >
+          <Link cover to={`/${section.key}`} bg="black" direction="up" className="nav-link" activeClassName="active" >
             {section.icon}
             {section.displayedName}
-          </TransitionLink>
+          </Link>
         </li>
       );
     });
