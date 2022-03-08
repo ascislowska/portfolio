@@ -5,7 +5,7 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-netlify-cms",
-    "gatsby-plugin-sass"
+    "gatsby-plugin-sass",
     {
       resolve: "gatsby-plugin-react-svg",
       options: {

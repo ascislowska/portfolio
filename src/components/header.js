@@ -1,7 +1,7 @@
 import React from "react";
 //import AniLink from "gatsby-plugin-transition-link/AniLink";
 //import TransitionLink from 'gatsby-plugin-transition-link';
-import Link from "gatsby";
+import { Link } from "gatsby";
 
 import { useStaticQuery, graphql } from 'gatsby'
 
@@ -12,7 +12,6 @@ import HomeIcon from "../images/icons/home.svg";
 import AboutIcon from "../images/icons/about5.svg";
 import PortfolioIcon from "../images/icons/portfolio2.svg";
 import ContactIcon from "../images/icons/mail.svg";
-import gatsbyConfig from "../../gatsby-config";
 
 
 const Header = () => {
@@ -23,7 +22,7 @@ const Header = () => {
         title
       }
     }
-  }`);
+  }`)
 
   function renderNavList() {
     //main page sections
