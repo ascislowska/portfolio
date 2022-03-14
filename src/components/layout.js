@@ -15,11 +15,11 @@ const Layout = ({ children, pageKey }) => {
       }
     }`);
   //na razie nie wykorzystane. W przyszłości do zbudowania nawigacji poprzez scroll
-  useState(() => {
-    window.addEventListener("wheel", (e) => {
-      console.log(e.deltaY);
-    });
-  }, []);
+  // useState(() => {
+  //   window.addEventListener("wheel", (e) => {
+  //     console.log(e.deltaY);
+  //   });
+  // }, []);
 
   return (
     <div className={`page ${pageKey ? pageKey : ""}`}>
